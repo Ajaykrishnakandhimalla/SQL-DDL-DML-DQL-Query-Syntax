@@ -1,0 +1,47 @@
+CREATE
+******
+    *Create command is used to create Tables, Views, Indexes, Synonyms, etc.
+       
+        syntax:-
+        ------ 
+           CREATE TABLE <TABLE_NAME>(<CLOUMN_NAME1> <DATATYPE(SIZE), <CLOUMN_NAME2> <DATATYPE(SIZE),------)
+
+ALTER
+*****
+
+   * Alter command is used to modify the table structure.
+   * Using  alter command we can ADD Columns,MODIFY Columns, Drop Columns.
+
+     (i) ADDING COLUMNS:-
+         --------------
+                ALTER TABLE <TABLE_NAME> ADD <COLUMN_NAME> <DATATYPE(SIZE)>
+
+     (ii) MODIFYING COLUMN:-
+          ---------------
+                ALTER TABLE <TABLE_NAME> ALTER COLUMN <COLUMN_NAME> <DATATYPE(SIZE)>
+
+     (iii) DROPPING COLUMN:-
+           ---------------
+                ALTER TABLE <TABLE_NAME> DROP <COLUMN_NAME>
+
+
+
+DROP
+****
+   * Drop command is used to delete all records from the table permanently.
+   * Table structure is not present
+
+        syntax:-
+        ------
+            DROP TABLE <TABLE_NAME>
+
+TRUNCATE
+********
+    * Truncate command is used to delete all records from the table permanently.
+    * Table structure is present.
+
+        syntax:-
+        ------
+            TRUNCATE TABLE <TABLE_NAME>
+       
+   

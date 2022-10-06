@@ -1,0 +1,40 @@
+1.IN:-
+  ***
+    * IN Operator is used to compare given fixed list of values.
+    * It supports all datatypes.
+
+
+2.NOT IN:-
+  ******
+     * NOT IN Operator is used to compare other than given fixed list of values.
+     * It supports all datatypes.
+
+3.BETWEEN:-
+  *******
+      * BETWEEN Operator is used to compare the values with in the range.
+      * It supports Number and Date datatypes.
+
+4.NOT BETWEEN:-
+  ***********
+      * NOT BETWEEN Operator is used to compare other than given range of values.
+      * It supports Number and Date datatypes.
+
+5.LIKE:-
+  ****
+     * LIKE Operator is used when comparassion based on patterns.
+     * It supports only Char datatype.
+     * Like operator consists of two wild characters.
+         
+            (i) %   ---------> Represents 0 (or) many characters.
+   
+            (ii) _  ---------> Represents exactly one character.
+
+6.IS:-
+  ***
+    * IS Operator is used to compare NUll/NOT NULL values.
+    * It supports all datatypes.
+         
+         
+
+
+    

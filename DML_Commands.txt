@@ -1,0 +1,64 @@
+1. INSERT
+   ******
+    * Insert command is used to insert new records into the existing table.
+      
+       syntax:- (INSERTING SINGLE ROW)
+       ------
+          
+           INSERT INTO <TABLE_NAME> VALUES(<VALUE1>,<VALUE2>,-----)
+
+       syntax:- (INSERTING MULTIPLE ROWS)
+       ------
+     
+           INSERT INTO <TABLE_NAME> VALUES(<VALUE1>,<VALUE2>,------),(<VALUE1>,<VALUE2>,------)
+
+    INSERTING NULLS
+    ***************
+       
+         (i) Explicit Null:-
+             -------------
+                 * Null's are inserted by user explicitly.
+                  
+                      syntax:-
+                      ------
+              
+                          INSERT INTO <TABLE_NAME> VALUES(<VALUE1>,NULL,<VALUE2>,NULL,-------)
+
+          (ii) Implicit Null:-
+               -------------
+                  * Null's are inserted by SQL SERVER automatically.
+
+                      syntax:-
+                      ------
+         
+                          INSERT INTO <TABLE_NAME> (<COLUMN1>,<COLUMN2>,-----) VALUES(<VALUE1>,<VALUE2>,--------)
+
+2. UPDATE:-
+   ******
+
+      * Update command is used to change (or) modify the existing table data.
+
+             syntax:-
+             ------
+                 UPDATE <TABLE_NAME> SET <COLUMN1> = <VALUE>, <COLUMN2> = <VALUE2>,----------[WHERE <CONDITION>]
+
+3. DELETE:-
+   ******
+      * Delete command is used to delete all records (or) specified records from the existing table data.
+      * Table structure is present.
+
+          syntax:
+          ------
+              DELETE FROM <TABLE_NAME> (TO DELETE ALL RECORDS FROM THE TABLE)
+
+                                       (OR)
+          
+              DELETE FROM <TABLE_NAME> WHERE <CONDITION> (TO DELETE SPECIFIED RECORDS FROM THE TABLE)   
+
+                                             (syntax for Where conditon:- <cloumn> <operator>   <value> )
+
+
+
+          
+
+

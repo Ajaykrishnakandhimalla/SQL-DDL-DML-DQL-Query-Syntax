@@ -1,0 +1,16 @@
+CREATE LOGIN(USER) WITH CUI (Command User Interface)
+****************************************************
+
+CREATE LOGIN <LOGIN_NAME> WITH PASSWORD='<PASSWORD>'
+
+
+CREATE DATABASE USING CUI
+*************************
+
+CREATE DATABASE <DATABASE_NAME>
+
+
+DROP DATABASE USING CUI
+***********************
+
+DROP DATABASE <DATABASE_NAME>

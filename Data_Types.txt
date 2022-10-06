@@ -1,0 +1,83 @@
+ DATATYPES
+**********
+1. Integer
+2. Character
+3. Float(or)Decimal
+4. Currency
+5. Date
+6. Binary
+
+
+
+1.INTERGER
+***********
+(i) TINYINT   --------> Values in between 0-225 (1Byte)                
+
+(ii) SMALLINT --------> Values in between -32768 to 32767(2Bytes)
+
+(iii) INT ------------> Values in between -2^31 to 2^31-1(4Bytes)
+
+(iv) BIGINT ----------> Values in between -2^63 to 2^63-1(8Bytes)
+
+
+2.CHARACTER
+************
+(i) CHAR------> 8000                                         ACC_TYPE(CHAR(1))
+                                                                     e.g:- S (or)  C
+
+(ii) VARCHAR----> 8000     
+
+(iii) VARCHAR(MAX)----> 2gb
+
+(iv) NCHAR ----
+      
+(v) NVARCHAR                                                          NAME(VARCHAR(20))
+                                                                          e.g:- MANASA
+
+DECIMAL:-
+*******
+
+salary decimal(7,2)
+
+
+       99999.00
+
+
+CURRENCY
+*******
+(i) SMALLMONEY-----> 4 BYTES(-214746.3648 TO 214746.3647)
+
+(ii) MONEY------> 8 BYTES
+
+
+
+
+DATE&TIME
+*********
+
+DATE---> ALLOWS ONLY DATE ------->(YYYY-MM-DD)
+
+TIME ----> ALLOWS ONLY TIME ------>(HH:MM:SS)
+
+DATETIME----> BOTH DATE&TIME 
+
+
+BINARY
+******
+
+INCLUDES AUDIO,VIDEO,DOCUMENTS,ETC....
+
+(i) Binary  ----> 8000 Bytes
+
+(ii) Varbinary  ---> 80000 Bytes
+
+(iii) Varbinary(max) ----2gb
+
+
+
+
+
+
+ 
+
+                                                   

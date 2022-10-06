@@ -1,0 +1,88 @@
+1.STORED PROCEDURES:-
+  -----------------
+
+      CREATE PROCEDUURE <PROCEDURE_NAME> 
+                      [<PARAMENTERS>]
+      AS
+       <STATEMENTS>
+
+2.STORED FUNCTIONS:-
+  ----------------
+
+    CREATE FUNCTION <FUNCTION_NAME>([<PARAMETERS>]) RETURNS <TYPE>
+
+    AS
+     BEGIN                                                      
+        <STATEMENTS>
+        RETURN <EXPRESSION>
+     END
+    
+   TYPES OF STORED FUNCTIONS:-
+   -------------------------
+        1.SCALAR VALUED FUNCTIONS
+        2.TABLE VALUED FUNCTIONS
+
+3.TRIGGERS:-
+  --------
+
+    CREATE TRIGGER <TRIGGER_NAME> ON <TABLE_NAME>
+    AFTER/INSTEAD OF DDL/DML
+    AS
+     <STATEMENTS>
+   
+
+---> DIFFERENCE BETWEEN PROCEDURE & FUNCTION:-
+     ---------------------------------------
+
+       PROCEDURE                                                         FUNCTION
+       ---------                                                        ----------
+    * PROCEDURE MAY OR MAY NOT RETURN A VALUE                       * FUNCTION MUST RETURN A VALUE
+    * PROCEDURE RETURNS MANY VALUES                                 * FUNCTION RETURNS SINGLE VALUE
+    * CAN'T EXECUTE WITH SQL COMMANDS                               * EXECUTE WITH SQL COMMANDS
+    * PROCEDURES ARE CREATED TO PERFORM OPERATION ON                * FUNCTIONS ARE CREATED TO PERFORM CALCULATIONS.
+      DATABASE.
+    * RETURNS VALUES BY USING OUTPUT PARAMETER.                     * RETURNS A VALUE BY USING RETURN STATEMENT.
+
+
+---> DIFFERENCE BETWEEN SCALAR & TABLE VALUED FUNCTIONS:-
+     --------------------------------------------------
+        SCALAR VALUED							TABLE VALUED
+        -------------                                                   ------------
+    * RETURN TYPE MUST BE A SCALAR TYPE                              * RETURN TYPE MUST BE TABLE.
+    * INVOKED IN SELECT CLAUSE                                       * INVOKED IN FROM CLAUSE
+    * RETURNS ONE VALUE                                              * RETURNS MULTIPLE VALUE
+    * RETURN EXPRESSION IS SCALAR VARIABLE                           * RETURN EXPRESSION IS SELECT STATEMENT.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TRIGGER T2 ON EMP
+   AFTER UPDATE
+   AS
+   DECLARE @NEW_SAL MONEY, @OLD_SAL MONEY
+   SELECT @OLD_SAL FROM DELETED
+   SELECT @NEW_SAL FROM INSERTED
+   IF @NEW_SAL < @OLD_SAL
+        BEGIN
+		   PRINT 'CANNOT DECREMENT SALARY'
+		   ROLLBACK
+		END
